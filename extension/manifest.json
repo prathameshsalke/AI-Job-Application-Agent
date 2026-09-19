@@ -1,1 +1,1 @@
-{"manifest_version":3,"name":"ApplyAI Job Analyzer","version":"1.0.0","description":"Analyze the current job page after explicit user action.","permissions":["activeTab","scripting"],"action":{"default_popup":"popup.html"},"content_scripts":[{"matches":["<all_urls>"],"js":["content.js"]}]}
+{"manifest_version":3,"name":"ApplyAI Job Assistant","version":"1.0.0","description":"Extract the currently opened job page after explicit user action.","permissions":["activeTab","scripting","storage"],"host_permissions":["http://localhost:8000/*"],"action":{"default_popup":"popup.html"}}

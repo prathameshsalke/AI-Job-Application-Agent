@@ -3,5 +3,6 @@ node_modules
 __pycache__
 *.pyc
 .env
-backend/uploads/
-backend/exports/
+backend/*.db
+backend/uploads/*
+backend/applications-export.csv

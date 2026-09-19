@@ -4,12 +4,12 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./backend:/app
+      - backend-data:/app
   frontend:
-    image: nginx:alpine
+    build: ./frontend
     ports:
       - "3000:80"
-    volumes:
-      - ./frontend:/usr/share/nginx/html:ro
     depends_on:
       - backend
+volumes:
+  backend-data:
