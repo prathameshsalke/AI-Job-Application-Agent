@@ -1,0 +1,1 @@
+document.getElementById('go').onclick=()=>chrome.tabs.query({active:true,currentWindow:true},tabs=>chrome.tabs.sendMessage(tabs[0].id,{type:'extract'},data=>{document.getElementById('out').textContent=JSON.stringify(data,null,2)}))
